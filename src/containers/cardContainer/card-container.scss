@@ -1,0 +1,10 @@
+div {
+    display: flex;
+
+    .robot {
+        position: absolute;
+        right: 0;
+        top: 15%;
+        z-index: 0;
+    }
+}
