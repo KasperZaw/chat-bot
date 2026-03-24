@@ -7,10 +7,14 @@ import './card-container.scss'
 
 const CardContainer = () => {
   return (
-    <div>
-      <Card img={iconCreateImg} alt={"create img icon"} text={"Cretae an image for my presentation"}/>
-      <Card img={iconBulb} alt={"give me idea icon"} text={"What to do with kids\’ art"} />
-      <Card img={iconEye} alt={"look icon"} text={"Find the decade that a photo is from"}/>
+    <div className="cards-container">
+      <div>
+        <Card img={iconCreateImg} alt={"create img icon"} text={"Cretae an image for my presentation"}/>
+        <Card img={iconBulb} alt={"give me idea icon"} text={"What to do with kids\’ art"} />
+        <Card img={iconEye} alt={"look icon"} text={"Find the decade that a photo is from"}/>
+      </div>
+
+        <img src={robot} alt="" />
     </div>
   )
 }

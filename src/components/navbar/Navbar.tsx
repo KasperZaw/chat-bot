@@ -1,10 +1,10 @@
-import './navbar.scss'
+import './navbar.scss';
 import iconHome from '../../assets/icons/nav-icons/icon-home.svg';
 import iconBrowse from '../../assets/icons/nav-icons/icon-browse.svg';
 import iconClock from '../../assets/icons/nav-icons/icon-clock.svg';
 import logo from '../../assets/icons/logo.svg';
 import plus from '../../assets/icons/plus.svg';
-import avatar from '../../assets/img/profile-pic.png'
+import avatar from '../../assets/img/profile-pic.png';
 
 const Navbar = () => {
   return (
