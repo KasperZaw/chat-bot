@@ -2,8 +2,10 @@ import '../../styles/chat-container.scss';
 import Header from '../../components/Header/Header';
 import TextBar from '../../components/textBar/TextBar';
 import CardContainer from '../cardContainer/CardContainer';
+import ChatBubble from '../../components/chatBubble/ChatBubble';
 import { useEffect, useState } from 'react';
 import { openApi } from '../../api/api';
+import { ThreeDot } from 'react-loading-indicators';
 
 const ChatContainer = () => {
   const [messages, setMessages] = useState<string[]>([]);
@@ -30,14 +32,12 @@ const ChatContainer = () => {
       {messages.length > 0 ? (
         <div className="chat-window">
          {messages.map((msg, index) => (
-          <div key={index}>
-            <div className="message-bubble">
-              {msg}
-            </div>
+          <div key={index} className="message-pair">
+              <ChatBubble isBot={false} userMessage={msg}/>
             {botReply[index] ? (
-              <p>{botReply[index]}</p>
+              <ChatBubble isBot={true} botMessage={botReply[index]} userMessage={msg}/>
             ) : (
-              <p>Ładowanie...</p>
+            <ThreeDot color="#FAFAFA" size="small" text="" textColor="" />
             )}
           </div>
           ))}
@@ -48,7 +48,7 @@ const ChatContainer = () => {
           <CardContainer />
         </>
       )}
-      <TextBar onValueSubmit={handleAddNewMessage} />
+      <TextBar onValueSubmit={handleAddNewMessage}  />
     </div>
   );
 };

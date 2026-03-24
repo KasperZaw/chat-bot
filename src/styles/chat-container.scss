@@ -11,3 +11,14 @@
     border-radius: 48px;
     position: relative;
 }
+
+.message-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.chat-window {
+    height: 80%;
+    overflow: auto;
+}

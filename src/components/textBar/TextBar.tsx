@@ -1,7 +1,6 @@
 import './text-bar.scss'
 import microfonIcon from '../../assets/icons/icon-microfone.svg'
 import sendIcon from '../../assets/icons/icon-send.svg'
-import { openApi } from '../../api/api'
 import { useState } from 'react'
 
 interface TextBarProps {
@@ -12,6 +11,7 @@ const TextBar = ({onValueSubmit}: TextBarProps) => {
  
   const sendToParent = () => {
     onValueSubmit(message);
+    setMessage("")
   };
   return (
     <div className="text-bar-container">
@@ -21,7 +21,7 @@ const TextBar = ({onValueSubmit}: TextBarProps) => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             />
-            <button className='send-btn'><img src={sendIcon} alt="" onClick={sendToParent}/></button>
+            <button className='send-btn'><img src={sendIcon} alt="" onClick={sendToParent} /></button>
         </div>
     </div>
   )
