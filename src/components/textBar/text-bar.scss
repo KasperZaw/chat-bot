@@ -1,53 +1,62 @@
 .text-bar-container {
-    background: var(--color-card-small);
-    border-radius: 40px;
-    padding: 16px 40px;
-    border: 1px solid var(--color-border);
-    z-index: 1;
+  background: var(--color-card-small);
+  border-radius: 40px;
+  padding: 16px 40px;
+  border: 1px solid var(--color-border);
+  z-index: 1;
 
-    div {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        height: 40px;
+  div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
 
-        input {
-            background: none;
-            border: none;
-            outline: none;
-            height: 100%;
-            width: 100%;
-            font-size: 18px;
-            padding: 8px;
+    input {
+      background: none;
+      border: none;
+      outline: none;
+      height: 100%;
+      width: 100%;
+      font-size: 18px;
+      padding: 8px;
 
-            color: #ffffff;
+      color: #ffffff;
 
-            &::placeholder {
-                color: #7C7676;
-            }
-        }
-
-        button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 40px;
-            width: 40px;
-            background: none;
-            border: none;
-            padding: 0;
-            cursor: pointer;
-
-            img {
-                height: 24px;
-                width: 24px;
-            }
-        }
-        .send-btn {
-            background-color: #343434;
-            border: 1px solid var(--color-border);
-            border-radius: 8px;
-        }
+      &::placeholder {
+        color: #7c7676;
+      }
     }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+
+      img {
+        height: 24px;
+        width: 24px;
+      }
+    }
+    .send-btn {
+      background: #2f82ef;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+
+      &:disabled {
+        color: #7c7676;
+        background: #343434;
+        cursor: not-allowed;
+        border: 1px solid var(--color-border);
+      }
+    }
+  }
 }

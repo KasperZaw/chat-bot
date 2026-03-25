@@ -1,52 +1,52 @@
-
 :root {
-    --color-bg: #141415;
-    --color-white: 255, 255, 255;
-    --color-card: rgba(var(--color-white), 0.04);
-    --color-card-small: rgba(var(--color-white), 0.02);
-    --color-border: rgba(var(--color-white), 0.02);
+  --color-bg: #141415;
+  --color-white: 255, 255, 255;
+  --color-card: rgba(var(--color-white), 0.04);
+  --color-card-small: rgba(var(--color-white), 0.02);
+  --color-border: rgba(var(--color-white), 0.02);
 }
 
 * {
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    background-color: var(--color-bg);
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--color-bg);
 }
 
 main {
-    height: 100vh;
-    width: 100vw;
-    padding: 80px 40px 0;
-    box-sizing: border-box;
-    overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  padding: 80px 40px 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    font-weight: bold;
-    h1 {
-        display: block;
-        width: fit-content;
-        background: linear-gradient(to right, #2F82EF, #FF3B3B);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        font-size: 48px;
-        margin: 0;
-    }
- 
-    span {
-        font-size: 40px; 
-        color: #645F5F;
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-weight: bold;
+  h1 {
+    display: block;
+    width: fit-content;
+    background: linear-gradient(to right, #2f82ef, #ff3b3b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 48px;
+    margin: 0;
+  }
+
+  span {
+    font-size: 40px;
+    color: #645f5f;
+  }
 }

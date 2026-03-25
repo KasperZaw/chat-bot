@@ -1,39 +1,39 @@
 .user-bubble {
-    align-self: flex-end;
-    display: inline-flex;
-    align-items: center;
-    gap: 20px;
-    background: var(--color-card-small);
-    padding: 24px 40px;
-    border: 1px solid var(--color-border);
-    border-radius: 14px;
-    margin-bottom: 40px;
-    color: #FAFAFA;
-    font-size: 18px;
-    font-weight: bold;
+  align-self: flex-end;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--color-card-small);
+  padding: 24px 40px;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  margin-bottom: 40px;
+  color: #fafafa;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .bot-bubble {
-    align-self: flex-start;
-    display: inline-flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 24px;
-    background: var(--color-card-small);
-    padding: 24px 40px;
-    border: 1px solid var(--color-border);
-    border-radius: 14px;
-    margin-bottom: 40px;
-    color: #FAFAFA;
-    font-size: 18px;
-    font-weight: 600;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  background: var(--color-card-small);
+  padding: 24px 40px;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  margin-bottom: 40px;
+  color: #fafafa;
+  font-size: 18px;
+  font-weight: 600;
 
-    div {
-        padding-bottom: 24px;
-        border-bottom: 1px solid #FAFAFA;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        gap: 24px;
-    }
+  div {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #fafafa;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
 }

@@ -1,36 +1,36 @@
 nav {
-    background-color: var(--color-card);
-    border-radius: 40px;
-    padding: 40px 24px;
+  background-color: var(--color-card);
+  border-radius: 40px;
+  padding: 40px 24px;
 
-    .nav-container {
-        display: flex;
-        flex-direction: column;
-        width: 40px;
-        justify-content: space-between;
-        height: 100%;
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icons-container {
+    img {
+      padding: 8px;
     }
+  }
+
+  .logo-container {
+    gap: 24px;
 
     div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      background: #2f82ef;
+      padding: 8px;
+      border-radius: 8px;
+      cursor: pointer;
     }
-
-    .icons-container {
-        img {
-            padding: 8px;
-        }
-    }
-
-    .logo-container {
-        gap: 24px;
-
-        div {
-            background: #2F82EF;
-            padding: 8px;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-    }
+  }
 }

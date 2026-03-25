@@ -1,19 +1,19 @@
-import './card.scss'
+import "./card.scss";
 
 interface CardProps {
-    text: string;
-    img: string;
-    alt: string;
+  text: string;
+  img: string;
+  alt: string;
 }
 
-
 const Card = ({ text, img, alt }: CardProps) => {
-    return (
-      <div className="card-container">
-            <svg width="0" height="0">
-            <defs>
-                <clipPath id="card-clip" clipPathUnits="objectBoundingBox">
-                <path d="M0.89,0.005 
+  return (
+    <div className="card-container">
+      <svg width="0" height="0">
+        <defs>
+          <clipPath id="card-clip" clipPathUnits="objectBoundingBox">
+            <path
+              d="M0.89,0.005 
                         C0.95,0.005 1,0.065 1,0.14 
                         V0.63 
                         C1,0.665 1,0.68 0.99,0.7 
@@ -28,18 +28,19 @@ const Card = ({ text, img, alt }: CardProps) => {
                         V0.14 
                         C0.003,0.065 0.05,0.005 0.11,0.005 
                         H0.89 
-                        Z" />
-                </clipPath>
-            </defs>
-            </svg>
-          <div className='card-main'>
-              <span>{text}</span>
-          </div>
-          <div className='card-side'>
-              <img src={img} alt={alt}/>
-          </div>
+                        Z"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+      <div className="card-main">
+        <span>{text}</span>
       </div>
-    )
-  }
+      <div className="card-side">
+        <img src={img} alt={alt} />
+      </div>
+    </div>
+  );
+};
 
-export default Card
+export default Card;
