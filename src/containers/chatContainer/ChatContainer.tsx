@@ -10,7 +10,7 @@ import { ThreeDot } from "react-loading-indicators";
 const ChatContainer = () => {
   const [messages, setMessages] = useState<string[]>([]);
   const [botReply, setBotReply] = useState<string[]>([]);
-  const [stop, setStop] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const handleAddNewMessage = (newText: string) => {
     setMessages((prev) => [...prev, newText]);
   };
@@ -23,7 +23,7 @@ const ChatContainer = () => {
       const reply = await openApi(lastMessage);
       if (reply) {
         setBotReply((prev) => [...prev, reply]);
-        setStop(false);
+        setIsLoading(false);
       }
     };
     getReply();
@@ -54,7 +54,7 @@ const ChatContainer = () => {
           <CardContainer />
         </>
       )}
-      <TextBar onValueSubmit={handleAddNewMessage} isLoading={stop} />
+      <TextBar onValueSubmit={handleAddNewMessage} isLoading={isLoading} />
     </div>
   );
 };
