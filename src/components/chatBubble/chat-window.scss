@@ -1,3 +1,11 @@
+.bot-bubble-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
 .user-bubble {
   align-self: flex-end;
   display: inline-flex;
@@ -7,10 +15,10 @@
   padding: 24px 40px;
   border: 1px solid var(--color-border);
   border-radius: 14px;
-  margin-bottom: 40px;
   color: #fafafa;
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 40px;
 }
 
 .bot-bubble {
