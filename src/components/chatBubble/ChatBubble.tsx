@@ -1,4 +1,4 @@
-import "./chat-window.scss";
+import "./chat-bubble.scss";
 import logo from "../../assets/icons/logo.svg";
 import avatar from "../../assets/img/profile-pic.png";
 import ReplyMenu from "../replyMenu/ReplyMenu";
