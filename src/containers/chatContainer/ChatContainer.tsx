@@ -3,7 +3,7 @@ import Header from "../../components/Header/Header";
 import TextBar from "../../components/textBar/TextBar";
 import CardContainer from "../cardContainer/CardContainer";
 import ChatBubble from "../../components/chatBubble/ChatBubble";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { openApi } from "../../api/api";
 import { ThreeDot } from "react-loading-indicators";
 
@@ -11,10 +11,16 @@ const ChatContainer = () => {
   const [messages, setMessages] = useState<string[]>([]);
   const [botReply, setBotReply] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const bottomRef = useRef<HTMLDivElement | null>(null);
+  const lastMessage = messages.at(-1);
+
   const handleAddNewMessage = (newText: string) => {
     setMessages((prev) => [...prev, newText]);
   };
-  const lastMessage = messages.at(-1);
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({behavior: "smooth",})
+  }, [messages, botReply]);
 
   useEffect(() => {
     if (!lastMessage) return;
@@ -47,6 +53,7 @@ const ChatContainer = () => {
               )}
             </div>
           ))}
+          <div ref={bottomRef} />
         </div>
       ) : (
         <>

@@ -24,6 +24,11 @@ const TextBar = ({ onValueSubmit, isLoading }: TextBarProps) => {
           placeholder="Ask anything from here"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && !(message.trim() === "" || isLoading)) {
+              sendToParent();
+            }
+          }}
         />
         <button
           className="send-btn"
