@@ -7,11 +7,21 @@ The main goal was to recreate the UI as accurately as possible while implementin
 
 The chatbot uses the GPT API (model 4o-mini) to generate responses.
 
+**Note:**
+This project uses a test API key with limited credits ($2).
+I am aware that the key is exposed on the frontend. In a production environment, the API key should be handled on the backend to ensure security.
+
+---
+
+## Screen shot
+
+![alt text](src/assets/img/ss.png)
+
 ---
 
 ## Live Demo
 
-👉 https://your-deployment-link.com
+👉 https://chat-bot-project-nine.vercel.app/
 
 ---
 
