@@ -5,12 +5,21 @@
   max-height: 60%;
   gap: 24px;
 
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
+
   div {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
   }
 
-  img {
+  .robot {
     height: 90%;
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
   }
 }

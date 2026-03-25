@@ -2,6 +2,12 @@ nav {
   background-color: var(--color-card);
   border-radius: 40px;
   padding: 40px 24px;
+  backdrop-filter: var(--blur-glass);
+  -webkit-backdrop-filter: var(--blur-glass);
+
+  @media screen and (max-width: 1400px) {
+    padding: 24px 40px;
+  }
 
   .nav-container {
     display: flex;
@@ -9,12 +15,21 @@ nav {
     width: 40px;
     justify-content: space-between;
     height: 100%;
+
+    @media screen and (max-width: 1400px) {
+      flex-direction: row;
+      width: 100%;
+    }
   }
 
   div {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 1400px) {
+      flex-direction: row;
+    }
   }
 
   .icons-container {

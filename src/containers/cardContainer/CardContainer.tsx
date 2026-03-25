@@ -41,7 +41,7 @@ const CardContainer = () => {
         />
       </div>
 
-      <img src={robot} alt="" />
+      <img src={robot} alt="robot" className="robot" />
     </div>
   );
 };

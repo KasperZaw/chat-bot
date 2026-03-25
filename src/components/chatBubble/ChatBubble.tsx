@@ -1,7 +1,7 @@
 import "./chat-window.scss";
 import logo from "../../assets/icons/logo.svg";
 import avatar from "../../assets/img/profile-pic.png";
-import ReplyMenu from '../replyMenu/ReplyMenu';
+import ReplyMenu from "../replyMenu/ReplyMenu";
 
 interface chooseBubble {
   isBot: boolean;
@@ -21,7 +21,7 @@ const ChatBubble = ({ isBot, botMessage, userMessage }: chooseBubble) => {
             </div>
             <span>{botMessage}</span>
           </div>
-            <ReplyMenu />
+          <ReplyMenu />
         </div>
       ) : (
         <div className="user-bubble">
