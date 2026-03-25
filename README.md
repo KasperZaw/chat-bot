@@ -30,7 +30,7 @@ I am aware that the key is exposed on the frontend. In a production environment,
 * React
 * TypeScript
 * Vite
-* Tailwind CSS
+* SCSS
 
 ---
 
