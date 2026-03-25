@@ -24,23 +24,23 @@ const Card = ({ text, img, alt, gradient }: CardProps) => {
     <div className="card">
       <svg viewBox="0 0 270 213" className="card-svg">
         <defs>
-        <linearGradient id={gradientId} x1="0%" y1="100%" x2="100%" y2="0%">
-            <stop 
-              offset="0%" 
-              stopColor={gradient.from.color} 
-              stopOpacity={gradient.from.opacity ?? 1} 
+          <linearGradient id={gradientId} x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop
+              offset="0%"
+              stopColor={gradient.from.color}
+              stopOpacity={gradient.from.opacity ?? 1}
             />
             {gradient.mid && (
-              <stop 
-                offset="50%" 
-                stopColor={gradient.mid.color} 
-                stopOpacity={gradient.mid.opacity ?? 1} 
+              <stop
+                offset="50%"
+                stopColor={gradient.mid.color}
+                stopOpacity={gradient.mid.opacity ?? 1}
               />
             )}
-            <stop 
-              offset="100%" 
-              stopColor={gradient.to.color} 
-              stopOpacity={gradient.to.opacity ?? 1} 
+            <stop
+              offset="100%"
+              stopColor={gradient.to.color}
+              stopOpacity={gradient.to.opacity ?? 1}
             />
           </linearGradient>
         </defs>

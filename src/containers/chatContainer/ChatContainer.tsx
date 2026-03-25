@@ -19,7 +19,7 @@ const ChatContainer = () => {
   };
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({behavior: "smooth",})
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, botReply]);
 
   useEffect(() => {
