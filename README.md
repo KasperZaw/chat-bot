@@ -8,12 +8,14 @@ The main goal was to recreate the UI as accurately as possible while implementin
 The chatbot uses the GPT API (model 4o-mini) to generate responses.
 
 **Note:**
+
 This project uses a test API key with limited credits ($2).
 I am aware that the key is exposed on the frontend. In a production environment, the API key should be handled on the backend to ensure security.
 
 ---
 
-Approach
+**Approach**
+
 The application was structured using a component-based architecture with a clear separation between UI and logic.
 
 I focused on splitting the code into small, well-organized files to maintain a clean and scalable project structure.
