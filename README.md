@@ -13,6 +13,19 @@ I am aware that the key is exposed on the frontend. In a production environment,
 
 ---
 
+Approach
+The application was structured using a component-based architecture with a clear separation between UI and logic.
+
+I focused on splitting the code into small, well-organized files to maintain a clean and scalable project structure.
+
+State is managed locally using React hooks, ensuring a predictable data flow between user input and API responses.
+
+I built reusable components and kept the code readable while integrating asynchronous communication with the GPT API.
+
+The goal was to replicate the Figma design as closely as possible without overengineering the solution.
+
+---
+
 ## Screen shot
 
 ![alt text](src/assets/img/ss.png)

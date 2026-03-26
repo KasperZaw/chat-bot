@@ -23,6 +23,7 @@ export async function openApi(message: string | undefined) {
     
     const data = await response.json();
     const content = data.choices[0].message.content;
+    
     // handle unexpected API response (missing choices)
     if (!content) {
       console.error("API Error:", data);
